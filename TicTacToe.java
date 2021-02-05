@@ -46,8 +46,8 @@ public class TicTacToe {
             int row = getValidIntegerInputInRange(inputS, "Select your row.", 1, 3); //asks the user to select the row
             int column = getValidIntegerInputInRange(inputS, "Select your column.", 1, 3); //asks the user to select the column
             //subtracts a value of one from each row and column to match the 2D array index
-            if (gameBoard[row - 1][column - 1] == '-') {  //ensures that the position is empty
-                gameBoard[row - 1][column - 1] = symbol; //replaces the position with the symbol (depending on the move count)
+            if (gameBoard[column - 1][row - 1] == '-') {  //ensures that the position is empty
+                gameBoard[column- 1][row - 1] = symbol; //replaces the position with the symbol (depending on the move count)
             }
             printGameBoard(); //prints the game board
 
